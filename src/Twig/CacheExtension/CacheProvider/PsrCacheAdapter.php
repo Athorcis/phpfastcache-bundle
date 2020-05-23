@@ -80,10 +80,11 @@ class PsrCacheAdapter implements CacheProviderInterface
      */
     public function save($key, $value, $lifetime = 0)
     {
-        $item = $this->cache->getTwigCacheInstance()->getItem($key);
+        $cacheInstance = $this->cache->getTwigCacheInstance();
+        $item = $cacheInstance->getItem($key);
         $item->set($value);
         $item->expiresAfter($lifetime);
 
-        return $this->cache->save($item);
+        return $cacheInstance->save($item);
     }
 }
