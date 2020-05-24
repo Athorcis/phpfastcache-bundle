@@ -1,5 +1,5 @@
 {
-    "name": "effiana/phpfastcache-bundle",
+    "name": "phpfastcache/phpfastcache-bundle",
     "type" : "symfony-bundle",
     "description": "Phpfastcache Bundle for Symfony integration",
     "keywords": ["cache", "phpfastcache", "symfony", "php", "bundle"],
